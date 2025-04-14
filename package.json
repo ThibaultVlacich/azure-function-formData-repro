@@ -1,0 +1,49 @@
+{
+  "name": "azure-function-app-nodejs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/**.js",
+  "description": "Azure Function App starter template",
+  "scripts": {
+    "functions": "cross-env NODE_ENV=development func start",
+    "functions:verbose": "cross-env NODE_ENV=development func start --verbose",
+    "test": "echo \"No tests yet...\"",
+    "version": "npm run changelog"
+  },
+  "author": {
+    "name": "Michael Sprague",
+    "email": "ms388@cornell.edu"
+  },
+  "repository": {
+    "url": "https://github.com/cu-cit-cloud-team/azure-function-app-nodejs-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/cu-cit-cloud-team/azure-function-app-nodejs-starter/issues"
+  },
+  "engines": {
+    "node": ">= 22.x",
+    "npm": ">= 10.x"
+  },
+  "dependencies": {
+    "@azure/functions": "4.7.0",
+    "dotenv": "16.5.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "azure-functions-core-tools": "4.0.7030",
+    "conventional-changelog": "6.0.0",
+    "conventional-changelog-cli": "5.0.0",
+    "conventional-changelog-conventionalcommits": "8.0.0",
+    "cross-env": "7.0.3",
+    "cz-git": "1.11.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "release": {
+    "preset": "conventionalcommits"
+  }
+}

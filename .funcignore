@@ -1,0 +1,15 @@
+.git/
+.history/
+.vscode/
+*.js.map
+*.ts
+*.md
+*.code-workspace
+.editorConfig
+.nvmrc
+tsconfig.json
+jsconfig.json
+biome.json
+local.settings.json
+example.local.settings.json
+scratch.js
